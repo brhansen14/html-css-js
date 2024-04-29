@@ -96,7 +96,12 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and 
                         typesetting industry. Lorem Ipsum has
                         been the industry's</p>
-                        <button id="btn" href="paris.html" type="button" onclick="alert('botão clicado')">Saiba Mais</button>
+                        <button id="btn1" onclick="expandirConteudo('texto1')" type="button">Saiba Mais 1</button>
+                        <div id="texto1" class="texto-hidden">
+                            <h2>Titulo do Conteudo 1</h2>
+                            <p>Conteudo expandido teste 1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <button onclick="fecharConteudo('texto1')">Fechar</button>
+                        </div>      
                 </div>
             </div>
             <!----fim do item-->
@@ -113,7 +118,12 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and 
                         typesetting industry. Lorem Ipsum has
                         been the industry's</p>
-                        <button id="btn" href="paris.html" type="button" onclick="alert('botão clicado 2')">Saiba Mais</button>
+                        <button id="btn2" onclick="expandirConteudo('texto2')" type="button">Saiba Mais 2</button>
+                            <div id="texto2" class="texto-hidden">
+                                <h2>Titulo do Conteudo 2</h2>
+                                <p>Conteudo expandido teste 2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                <button onclick="fecharConteudo('texto2')">Fechar</button>
+                            </div>
                 </div>
             </div>
             <!----fim do item-->
@@ -130,7 +140,12 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and 
                         typesetting industry. Lorem Ipsum has
                         been the industry's</p>
-                        <button href="roma.html" id="btn" type="button">Saiba Mais</button>
+                        <button id="btn3" onclick="expandirConteudo('texto3')" type="button">Saiba Mais 3</button>
+                        <div id="texto3" class="texto-hidden">
+                            <h2>Titulo do Conteudo 3</h2>
+                            <p>Conteudo expandido teste 3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                            <button onclick="fecharConteudo('texto3')">Fechar</button>
+                        </div>
                 </div>
             </div>
             <!----fim do item-->
@@ -159,7 +174,7 @@
         </div>
     </section>
     <!----------fim do sobre-->
-
+    <script src="script.js"></script>    
     <!----------footer------>
     <footer>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -179,7 +194,7 @@
         <span>Página Com Minhas Viagems! </span>
     </footer>
 
-    <script src="script.js"></script>
+    
 
 </body>
 </html>
