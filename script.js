@@ -1,5 +1,15 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+//
+function expandirConteudo(id) {
+    var conteudo = document.getElementById(id);
+    conteudo.classList.remove('texto-hidden');
+}
+
+function fecharConteudo(id) {
+    var conteudo = document.getElementById(id);
+    conteudo.classList.add('texto-hidden');
+}
 
 window.onscroll = () => {
     sections.forEach (sec => {
@@ -16,17 +26,3 @@ window.onscroll = () => {
         };
     });
 };
-
-$(document).ready(function(){
-    // Adiciona um manipulador de evento de clique para o botão que muda de página
-    $('#btn').click(function(e){
-        e.preventDefault(); // Evita que o link seja seguido normalmente
-
-        // Obtém o URL da página desejada a partir do atributo href do botão
-        var novaPagina = $(this).attr('href');
-
-        // Redireciona para a nova página
-        window.location.href = novaPagina;
-    });
-});
-
